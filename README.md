@@ -1,2 +1,2 @@
-# fashion
-Fashion style prediction with body stats for women
+# Gymapp
+Building gym app
