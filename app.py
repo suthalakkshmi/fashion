@@ -21,7 +21,7 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['GET','POST'])
 def predict():
     data1 = request.form['a']
     data2 = request.form['b']
