@@ -16,13 +16,13 @@ app = Flask(__name__)
 filename = 'Model_Fashion.pkl'
 model = pickle.load(open(filename, 'rb'))
 
-@app.route('/',methods=['GET','POST'])
+@app.route('/')
 def home():
     return render_template('home.html')
 
 
 @app.route('/predict/', methods=['GET','POST'])
-def predict():
+def predicts():
     data1 = request.form['a']
     data2 = request.form['b']
     data3 = request.form['c']
