@@ -17,12 +17,12 @@ filename = 'Model_Fashion.pkl'
 model = pickle.load(open(filename, 'rb'))
 
 @app.route('/')
-def man():
+def home():
     return render_template('home.html')
 
 
 @app.route('/predict', methods=['POST'])
-def home():
+def predict():
     data1 = request.form['a']
     data2 = request.form['b']
     data3 = request.form['c']
