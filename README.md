@@ -1,2 +1,2 @@
-# Gymapp
-Building gym app
+# Fashion
+Fashion Style predictor app
